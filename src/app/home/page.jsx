@@ -8,8 +8,8 @@ export default async function HomePage() {
   ];
 
   return (
-    <main className="flex flex-row items-center w-screen h-screen">
-      <Chats />
+    <main className="flex flex-row w-screen h-screen">
+      <Chats chats={chats} />
     </main>
   );
 }

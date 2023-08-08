@@ -12,13 +12,9 @@ import {
 import { Avatar } from "@radix-ui/react-avatar";
 import { useState } from "react";
 
-export default function Chats() {
-  const currentChat = useState(none);
+export default function Chats({ chats }) {
+  const currentChat = useState(null);
   // server side function
-  const chats = [
-    { name: "Person 1", lastMessage: "Hello", lastSeen: "10m ago" },
-    { name: "Person 2", lastMessage: "Hello", lastSeen: "10m ago" },
-  ];
 
   return (
     <main className="flex flex-row items-center w-screen h-screen">
@@ -26,7 +22,7 @@ export default function Chats() {
         {/* Sidebar of all chats */}
         {chats.map((chat) => {
           return (
-            <Card className=" m-12">
+            <Card className=" my-4 mx-2">
               <CardHeader>
                 {/* Avatar next to data */}
                 <Avatar></Avatar>
