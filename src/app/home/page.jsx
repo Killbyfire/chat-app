@@ -3,8 +3,8 @@ import Chats from "./chats";
 
 export default async function HomePage() {
   const chats = [
-    { name: "Person 1", lastMessage: "Hello", lastSeen: "10m ago" },
-    { name: "Person 2", lastMessage: "Hello", lastSeen: "10m ago" },
+    {id: "102032", name: "Person 1", lastMessage: "Hello", lastSeen: "10m ago" },
+    {id: "1020324", name: "Person 2", lastMessage: "Hello", lastSeen: "10m ago" },
   ];
 
   return (

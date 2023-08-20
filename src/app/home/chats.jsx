@@ -18,11 +18,11 @@ export default function Chats({ chats }) {
 
   return (
     <main className="flex flex-row items-center w-screen h-screen">
-      <Card className="flex flex-col justify-center align-center overflow-y-scroll w-[20vw] h-screen">
+      <Card className="flex flex-col align-center overflow-y-scroll w-[20vw] h-screen">
         {/* Sidebar of all chats */}
         {chats.map((chat) => {
           return (
-            <Card className=" my-4 mx-2">
+            <Card key={chat.id} className="my-2 mx-2 rounded-[10px]">
               <CardHeader>
                 {/* Avatar next to data */}
                 <Avatar></Avatar>
