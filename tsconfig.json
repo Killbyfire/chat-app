@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/home/actions.js"  ],
+, "src/app/home/actions.js", "src/utils/supabase.js"  ],
   "exclude": [
     "node_modules"
   ]

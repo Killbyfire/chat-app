@@ -22,16 +22,18 @@ export default function Chats({ chats }) {
         {/* Sidebar of all chats */}
         {chats.map((chat) => {
           return (
-            <Card key={chat.id} className="my-2 mx-2 rounded-[10px]">
-              <CardHeader>
-                {/* Avatar next to data */}
-                <Avatar></Avatar>
-                <CardTitle>{chat.name}</CardTitle>
-                <CardDescription>
-                  {chat.lastMessage} • {chat.lastSeen}
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href={`/chat/${chat.id}`}>
+              <Card key={chat.id} className="my-2 mx-2 rounded-[10px]">
+                <CardHeader>
+                  {/* Avatar next to data */}
+                  <Avatar></Avatar>
+                  <CardTitle>{chat.name}</CardTitle>
+                  <CardDescription>
+                    {chat.lastMessage} • {chat.lastSeen}
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
           );
         })}
       </Card>

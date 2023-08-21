@@ -1,5 +1,4 @@
+// check participants
 export default function chatPage({ params }) {
-    return (
-        <h1>{params.chatid}</h1>
-    )
+  return <h1>{params.chatid}</h1>;
 }

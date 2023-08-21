@@ -21,11 +21,13 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@radix-ui/react-separator";
 import { useForm } from "react-hook-form";
+import { CreateAccount } from "./actions";
 
 export default function LoginPage() {
   const form = useForm();
   return (
     <main className="flex w-screen h-screen justify-center items-center">
+      <Button className="w-5 h-5" onClick={() => {CreateAccount()}}>Hello</Button>
       <Card className="max-w-sm lg:w-[40vw] w-[80vw] rounded-xl">
         <CardHeader>
           <CardTitle>Login</CardTitle>
